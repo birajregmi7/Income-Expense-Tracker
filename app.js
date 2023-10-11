@@ -57,14 +57,13 @@ function calculateDifference() {
   return incomeTotal - expenseTotal;
 }
 
-// Update the difference and log it
+
 function updateDifference() {
   let difference = calculateDifference();
   console.log(difference);
-  totalAmt.textContent = difference;
+  totalAmt.innerHTML = `The total amount remaining: ₹${difference}`;
 }
 
-// Initial update of the difference
 updateDifference();
 
 function funTable() {
